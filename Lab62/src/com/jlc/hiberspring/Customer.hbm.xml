@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.jlc.hiberspring">
+<class name="Customer" table="customers" lazy="false">
+<id name="cid" column="cid" type="int">
+<generator class="assigned"/>
+</id>
+<property name="cname"/>
+<property name="email"/>
+<property name="phone" type="long"/>
+<property name="city"/>
+</class>
+</hibernate-mapping>
